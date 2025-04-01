@@ -1,0 +1,304 @@
+@font-face {
+    font-family:kugile ;
+    src: url(Fonts/Kugile_Demo.ttf);
+}
+@font-face{
+    font-family: angelos;
+    src:url(Fonts/Angelos.ttf);
+}
+*
+{
+    margin:0;
+    box-sizing: border-box;
+}
+body
+{
+    color:#261206;
+    background-color: rgb(242, 230, 216);
+}
+.header{
+    padding: 2%;
+    display:flex;
+    width: 100%;
+}
+ul{
+    margin:2% 0 0 5%;
+}
+.header h1
+{
+    font-family: angelos;
+    padding:20px 0 0 0;
+}
+.logo
+{
+    align-content: center;
+    background-color: black 5px dotted;
+}
+.header li
+{
+    display: inline;
+    font-size: 25px;
+    text-decoration: none;
+    margin:0 60px;
+    font-weight: bolder;
+}
+.header a{
+    text-decoration: none;
+    color:#261206;
+}
+.header li:nth-child(1) a
+{
+    color:#FA8C38;
+}
+#search
+{
+    display: inline-flex;
+    margin-left: 10%;
+    position: relative;
+}
+#search i
+{
+    position:absolute;
+    left:5%;
+    top:30%;
+    font-size: 30px;
+}
+#search input 
+{
+    padding:5px 5px 5px 60px;
+    border-radius: 20px;
+    font-weight: lighter;
+    font-size: 20px;
+    border:none;
+    background-color: white;
+}
+.main
+{
+    display:flex;
+}
+.enjoy{
+    justify-items: center;
+}
+
+.enjoy h1
+{
+    padding: 5% 20% 0 20% ;
+    font-size: 4em;
+}
+.enjoy p
+{
+    color:grey;
+    padding: 5% 30% 0 20% ;
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+.enjoy button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.more-menu{
+    color:#f0b30a;
+}
+.order-now
+{
+    background-color: #261206;
+    color:white;
+}
+
+.enjoy , .cappuccino
+{
+    flex-grow: 1;
+}
+.cappuccino
+{
+    position: relative;
+    background-image: url('Images/coffee-removebg-preview.png');
+}
+.cappuccino .capp , .order,.rate
+{
+    position: absolute;
+    display:inline;
+    background-color:white ;
+    padding: 20px 70px; 
+    border: none;
+    border-radius: 50px;
+    border:10px rgb(231, 228, 228) solid;
+}
+
+.capp{
+    top:15%;
+    left:10%;
+}
+.order
+{
+    top:30%;
+    left:60%;
+}
+.rate{
+    top:60%;
+    left:20%;
+}
+
+.main img
+{
+    width:50%;
+    height: 60%;
+    border-radius: 100%;
+    margin:5% 0 0 20%;
+}
+.popular{
+    position: relative;
+}
+.popular img
+{
+    width:350px;
+    height:300px;
+}
+.popular > h1 
+{
+    padding:2em 0 0 3em;
+    font-size:3.5em;
+    color:#FA8C38;
+}
+.popular > .coffee
+{
+    display:flex;
+    justify-content: space-evenly;
+    margin:3em 5em 5em 5em;
+}
+.popular .image
+{
+    padding:2em 2em 4em 2em;
+    background-color: white;
+}
+.popular #now{
+    text-decoration: underline #FA8C38;
+    color:#261206;
+}
+.image button
+{
+    padding:0.5em 1em;
+    border:#ebad7d solid 2px;
+    border-radius: 10px;
+    color:#FA8C38;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 1em 2em 0 0;
+}
+.image button:hover{
+    border:#FA8C38 solid 2px;
+    transform:scale(1.2);
+    color:white;
+    background-color: #e99e65;
+}
+.image i
+{
+    color: #FA8C38; 
+    font-size: 30px;
+    margin-left: 2em;
+}
+.coffee-bg{
+    position: absolute;
+    background-image: url(Images/coffee-removebg-preview.png);
+    top:-5%;
+    left:-5%;
+    width: 600px;
+    height: 500px;
+    z-index:-1;
+}
+.background{
+    position:absolute;
+    top:55%;
+    background-color:#F9D9AA;
+    width:90%;
+    height:400px;
+    margin-left: 5em;
+    border-top-left-radius:100px ;
+    border-top-right-radius:200px ;
+    z-index: -1;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.rating{
+    position:absolute;
+    top:37%;
+    background-color: white;
+    border-radius: 1em;
+    padding: 5px 25px;
+    border:10px rgb(231, 228, 228) solid;
+}
+.delivery{
+    margin:5% 0 10% 0;
+    span{
+        text-decoration: underline #FA8C38;
+    }
+    >div{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    h1{
+        padding:2em 0 0 3em;
+        font-size: 40px; 
+        margin-bottom: 2%;
+    }
+
+    .choose,.deliver,.enjoy-coffee{
+        justify-items: center;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+.about-us{
+    background-image:linear-gradient(rgba(242, 230, 216, 0.8),rgba(242, 230, 216, 0.8)),url(Images/bg-coffee.jpg);
+    display: flex;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    position: relative;
+    height: 600px;
+    font-size:25px;
+    img{
+        width:400px;
+        height:600px;
+        border-radius: 10px;
+    }
+    .image{
+        background-color: white;
+        padding: 0.5em;
+        border-radius: 10px;
+        position:absolute;
+        top:-20%;
+        left:20%;
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.2);        
+    }
+    .about{
+        position: absolute;
+        margin:5% 10% 10% 60%;
+    }
+    h1{
+        margin:4% 0;
+    }
+    p{
+        color: grey;
+        padding: 2% 10% 3% 0;
+    }
+    h2{
+        padding:0 20% 0 0;
+    }
+    span{
+        text-decoration: underline #FA8C38;
+    }
+    button{
+        color:#f0b30a;
+        border-radius: 2em;
+        padding:1em 2em;
+        border: none;
+        font-size: 18px;
+        font-weight: bolder;
+        background-color: #261206;
+    }
+}
