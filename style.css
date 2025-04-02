@@ -525,7 +525,6 @@ ul{
     height: auto;
     .image{
         position:static;
-        width:58%;
         margin: auto;
         img{
             width:200px;
@@ -535,12 +534,42 @@ ul{
     .about{
         position: static;
         margin: 0 0 0 10px;
+        button{
+            margin-top: 3%;
+        }
     }
+    h1,p,
+    h2{
+        padding: 0 5px;
+    }
+
   }
  #menu{
-    position:static;
+    /* position:relative; */
     grid-template-columns: auto;
     gap:1%; 
+    #sandwich, #hotcoffee, #icecream, #cappucino, #maccacino, #wafle
+    {
+        display:absolute;
+    }
+    #sandwich{
+        top:1.5%;
+    }
+    #hotcoffee{
+        top: 20%;
+    }
+    #icecream{
+        top:37.5%;
+    }
+    #cappucino{
+        top:55%;
+    }
+    #maccacino{
+        top:72.5%;
+    }
+    #wafle{
+        top:90%;
+    }
  } 
 .promo{
     position:static;
