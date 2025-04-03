@@ -385,6 +385,9 @@ ul{
         position: absolute;
         top:80%;
         margin-left: 5%;
+        h2{
+            color:#FA8C38;
+        }
     }
 }
 
@@ -545,7 +548,6 @@ ul{
 
   }
  #menu{
-    /* position:relative; */
     grid-template-columns: auto;
     gap:1%; 
     #sandwich, #hotcoffee, #icecream, #cappucino, #maccacino, #wafle
@@ -588,15 +590,44 @@ ul{
         }
     }
     .review{
-        position:static;
+        position:relative;
         flex-direction: column;
+        margin: 0;
         img{
             width:200px;
             height:300px;
+            margin:10%;
         }
     }
-    .reviewer{
-        position: static;
+    
+    .naura{
+        top:20%;
+        left:-50%;
+    }
+    .john{
+        top:57%;
+        left:-50%;
+    }
+    .azure{
+        top:90%;
+        left:-50%;
+    }
+}
+.footer{
+    height:300px;
+    width:100%;
+    margin:10% 0 0 0;
+    font-size: large;
+    text-align: center;
+    input{
+        width:300px;
+        padding: 15px;
+        font-size: large;
+        text-align: center;
+    }
+    button{
+        margin:0;
+        width: 300px;
     }
 }
 }
